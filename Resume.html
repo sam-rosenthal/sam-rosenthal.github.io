@@ -12,7 +12,7 @@
 		<script src="after-load.js"> </script>
 		<script> 
 			function pageSpecificAfterLoad(){
-				$('a.navbar-brand').addClass("active");
+				$('ul.navbar-nav #resume').addClass("active");
 			}
 		</script> 
 	</head>
@@ -20,18 +20,12 @@
 		<div class="sam-navigation"></div>	
 		<div class="flex-container">
 			<div class="sam-card"></div>
-			<div class="jumbotron" style="margin-right:60px; margin-top:30px;">
-			  <h1 class="display-4">Welcome!</h1>
-			  <p class="lead">This is a the personal website of Sam Rosenthal.</p>
-			  <hr class="my-4">
-			  <p>I am currently a sophomore studying Computer Science looking for a 2019 summer internship. </p>
-			  <p> This past summer in addition to being a <a href="#" onclick="alert('todo')">technology counselor</a>, I created and developed my own OSS project. 
-			  My project, <a href="https://github.com/sam-rosenthal/java-cssSelector-to-xpath/blob/samdev/README.md" target="_blank">java-cssSelector-to-xpath</a>, is software that converts CSS Selector to XPath.
-			  I created a website using this software to provide an online conversion tool. The tool, <a href="https://css-selector-to-xpath.appspot.com" target="_blank">CSS Selector to XPath Converter</a>,
-			   is deployed on Google Cloud Platform (GCP) using its App Engine. I also created this webpage from scratch (without using templates or a publishing tool) to gain more understanding of web developement. </p>
-	
-			  <a class="btn btn-primary btn-lg" href="Projects" role="button">Learn more about my projects</a>
-			</div>	
+			<div style="width:100%;padding-right:30px;">
+				<object data="Test.pdf" type="application/pdf" width="100%" height="100%">
+   					<p><b>Example fallback content</b>: This browser does not support PDFs. Please download the PDF to view it: <a href="Test.pdf">Download PDF</a>.</p>
+				</object>	
+				<hr>		
+			</div>
 		</div>
 			
 	</body>
