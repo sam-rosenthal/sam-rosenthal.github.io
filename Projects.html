@@ -80,7 +80,7 @@
 					    <pre style="background-color:#f6f8fa"><code>  selectorString=selectorString.replaceAll("\\s+","");</code></pre> 
 						<hr>
 						<p><b>Recursion</b> - A basic CSS Selector is made up of (0 or 1) elements associated with (0 or more) attributes. A basic CSS Selector can have a "combinator" relationship with 
-						another CSS selector which then can have a "combinator" relationship with another CSS Selector which… This is the "cascading" relationship of CSS. This pattern lent itself to recursion.
+						another CSS selector which then can have a "combinator" relationship with another CSS Selector which ... This is the "cascading" relationship of CSS. This pattern lent itself to recursion.
 						I created a recursive method, recursiveSelectorSplit, which takes a basic selector and looks for a combinator. If it finds one it adds the element/combinator pair to a list of these pairs and 
 						calls itself to find the next cascading relationship. The recursion is complete when there are no more "combinators".</p>
 						<hr>
