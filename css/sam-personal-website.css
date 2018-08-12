@@ -1,0 +1,120 @@
+div.sam-navigation, div.sambox{
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+nav li{
+	padding-right: 10px;
+}
+nav a.navbar-brand.active{
+	background-color: #343a40;
+	padding-left:10px;
+}
+nav a.navbar-brand.active div{
+	color: white;
+}
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+nav a.navbar-brand{
+	padding-left:10px;
+}
+nav a.navbar-brand img{
+	padding-top:5px;
+}
+nav a.navbar-brand div
+{
+	font-size: 24px;
+	font-weight: bold;
+	float: right; 
+	margin: 7px;
+}
+div.sam-card{
+	min-width:300px;
+}
+div.sambox{
+	bottom:25px;
+	position:fixed;
+	overflow-y:auto;
+}
+body{
+	//background-color:#ffff99;
+	background-image: url("Background.jpg");
+    background-position: center;
+}
+ul.icons{
+	padding-left:0px;
+}
+ul.icons img{
+	margin-right:10px;
+	margin-top:5px;
+}
+.carousel-indicators li{
+    background-color: #343a40;
+}
+.carousel-indicators .active {
+    background-color: red;
+}
+.carousel-caption{
+	color:#343a40;
+}
+span[class^="carousel-control"] {
+	background-color:#343a40;
+}
+.toggle-all-technologies{
+	margin-left:20px;
+}
+button.showhideDetails{
+	padding-left:0px;
+	padding-right:0px;
+	margin-bottom:8px;
+	border:0px;
+	font-size:20px;
+}
+table th.col-md-6, table td.col-md-3{
+	border-left:2px solid black;
+	border-top:0px solid black;
+	
+}
+table tr{
+	border-top:2px solid black;
+	border-right:2px solid black;
+	
+}
+th[scope="row"]~td{
+	padding:0px;
+}
+th[scope="row"]~td li{
+	height:60px;
+	margin-bottom:0px;
+	text-align:center;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+li.skill-name h5{
+	margin-top:.5rem;
+	margin-bottom:.5rem;
+}
+tr#high .skill-icon:nth-of-type(odd),tr#medium .skill-icon:nth-of-type(odd),tr#low .skill-icon:nth-of-type(odd),
+tr#high .skill-name:nth-of-type(odd),tr#medium .skill-name:nth-of-type(odd),tr#low .skill-name:nth-of-type(odd){
+	background: #d6d8db;
+}
+ul.list-group {
+  list-style-type: none;
+}
+div.flex-container{
+	display:flex;
+	width:100%
+}
+div.container:
+{
+	width:100%;
+}
+ul#about-me-list li p{
+	margin:0px;
+}
+div#about-me-info p{
+	font-size:20px;
+}
