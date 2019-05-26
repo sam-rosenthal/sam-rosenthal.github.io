@@ -97,8 +97,8 @@ li.skill-name h5{
 	margin-top:.5rem;
 	margin-bottom:.5rem;
 }
-tr#high .skill-icon:nth-of-type(odd),tr#medium .skill-icon:nth-of-type(odd),tr#low .skill-icon:nth-of-type(odd),
-tr#high .skill-name:nth-of-type(odd),tr#medium .skill-name:nth-of-type(odd),tr#low .skill-name:nth-of-type(odd){
+tr#high .skill-icon:nth-of-type(odd),tr#medium .skill-icon:nth-of-type(even),tr#low .skill-icon:nth-of-type(odd),
+tr#high .skill-name:nth-of-type(odd),tr#medium .skill-name:nth-of-type(even),tr#low .skill-name:nth-of-type(odd){
 	background: #d6d8db;
 }
 ul.list-group {
