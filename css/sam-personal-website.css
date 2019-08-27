@@ -41,8 +41,12 @@ div.sambox{
 }
 body{
 	//background-color:#ffff99;
-	background-image: url("Background.jpg");
+	background-image: url("Background.png");
     background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #343a40;
+    background-blend-mode: luminosity;
 }
 ul.icons{
 	padding-left:0px;
@@ -81,7 +85,8 @@ table.skillsTable th.col-md-6, table.skillsTable td.col-md-3{
 table.skillsTable tr{
 	border-top:2px solid black;
 	border-right:2px solid black;
-	
+	margin-right: 0px; 
+	margin-left: 0px;
 }
 table.skillsTable th[scope="row"]~td{
 	padding:0px;
@@ -93,13 +98,16 @@ table.skillsTable th[scope="row"]~td li{
 	padding-top:10px;
 	padding-bottom:10px;
 }
+table.skillsTable tr#certification li{
+	height:auto;
+}
 li.skill-name h5{
 	margin-top:.5rem;
 	margin-bottom:.5rem;
 }
-tr#high .skill-icon:nth-of-type(odd),tr#medium .skill-icon:nth-of-type(even),tr#low .skill-icon:nth-of-type(odd),
-tr#high .skill-name:nth-of-type(odd),tr#medium .skill-name:nth-of-type(even),tr#low .skill-name:nth-of-type(odd){
-	background: #d6d8db;
+tr#high .skill-icon:nth-of-type(odd),tr#medium .skill-icon:nth-of-type(even),tr#low .skill-icon:nth-of-type(even),
+tr#high .skill-name:nth-of-type(odd),tr#medium .skill-name:nth-of-type(even),tr#low .skill-name:nth-of-type(even){
+	background: #81cfe0;
 }
 ul.list-group {
   list-style-type: none;
@@ -117,4 +125,15 @@ ul#about-me-list li p{
 }
 div#about-me-info p{
 	font-size:20px;
+}
+div.jumbotron{
+    margin-right: 60px;
+    margin-top: 30px;
+    border: double;
+}
+nav[id="sam-navbar"]{
+	border-bottom-style:double;
+	background-image:url(Nav_Background.jpg);
+	background-attachment: fixed;
+    background-size: cover;
 }
