@@ -1,0 +1,2 @@
+(this["webpackJsonpmy-app"]=this["webpackJsonpmy-app"]||[]).push([[8],{212:function(e,t,n){e.exports=n.p+"static/media/Resume.fc05ee9a.pdf"},229:function(e,t,n){"use strict";n.r(t),n.d(t,"default",(function(){return p}));var i=n(0),s=n.n(i);n(212);function p(){return s.a.createElement("iframe",{src:"./Resume.pdf",title:"resume",style:{display:"flex",minWidth:"100%",height:"100%",justifyContent:"center"}})}}}]);
+//# sourceMappingURL=8.3e924d5b.chunk.js.map
