@@ -24,18 +24,6 @@ const useStyles = makeStyles(() =>
 let theme = createMuiTheme({
   typography: {
     fontFamily: 'lato',
-    // h1: {
-    //   fontFamily: 'raleway',
-    //   fontStyle: 'bold',
-    // },
-    // h2: {
-    //   fontFamily: 'raleway',
-    //   fontStyle: 'bold',
-    // },
-    // h3: {
-    //   fontFamily: 'raleway',
-    //   fontStyle: 'bold',
-    // },
   },
   palette: {
     primary: {

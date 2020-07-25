@@ -139,7 +139,7 @@ interface HeadCell {
 
 const headCells: HeadCell[] = [
   { id: 'technology', numeric: false, label: 'Technology', align: 'left' },
-  { id: 'level', numeric: true, label: 'Experience Level', align: 'right' },
+  { id: 'level', numeric: true, label: 'Experience Level', align: 'center' },
   { id: 'category', numeric: false, label: 'Category', align: 'right' },
 ];
 
@@ -171,7 +171,12 @@ function EnhancedTableHead(props: EnhancedTableProps) {
     <TableHead>
       <TableRow>
         {headCells.map((headCell) => (
-          <TableCell key={headCell.id} align={headCell.align} sortDirection={orderBy === headCell.id ? order : false}>
+          <TableCell
+            key={headCell.id}
+            align={headCell.align}
+            sortDirection={orderBy === headCell.id ? order : false}
+            style={{ flexDirection: headCell.id === 'level' ? 'row-reverse' : undefined }}
+          >
             <TableSortLabel
               active={orderBy === headCell.id}
               direction={orderBy === headCell.id ? order : headCell.id === 'level' ? 'desc' : 'asc'}
@@ -248,8 +253,8 @@ export default function Skills(): JSX.Element {
 
   return (
     <Grid container direction="column" justify="center" spacing={3} style={{ textAlign: 'left' }}>
-      <Grid item>
-        {TypedHeader('My skills')}
+      <Grid item style={{ textAlign: 'center' }}>
+        {TypedHeader('My skillset')}
         <Divider />
       </Grid>
       <Grid item>
@@ -275,7 +280,7 @@ export default function Skills(): JSX.Element {
                         <Typography>{row.technology}</Typography>
                       </div>
                     </TableCell>
-                    <TableCell align="right">
+                    <TableCell align="center">
                       <Rating name="read-only" defaultValue={row.level} max={3} readOnly />
                     </TableCell>
                     <TableCell align="right">{row.category}</TableCell>
