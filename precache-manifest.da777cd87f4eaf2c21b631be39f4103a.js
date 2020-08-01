@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f7e7ce90c63fb58919a35abba386a304",
+    "revision": "0babfae47758147d8c8c542cda905a90",
     "url": "https://sam-rosenthal.github.io/index.html"
   },
   {
@@ -48,19 +48,19 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "https://sam-rosenthal.github.io/static/js/7.26059afe.chunk.js"
   },
   {
-    "revision": "9f557396c0d8da091adb",
-    "url": "https://sam-rosenthal.github.io/static/js/8.ac03a1b6.chunk.js"
+    "revision": "6fa8b200504bf0898653",
+    "url": "https://sam-rosenthal.github.io/static/js/8.59429554.chunk.js"
   },
   {
-    "revision": "674e739475a978110f6f",
-    "url": "https://sam-rosenthal.github.io/static/js/9.45e77f5f.chunk.js"
+    "revision": "65b5b9ae503b5d568952",
+    "url": "https://sam-rosenthal.github.io/static/js/9.b01f9709.chunk.js"
   },
   {
     "revision": "1cc7a2cbb89770108e9d",
     "url": "https://sam-rosenthal.github.io/static/js/main.62ad5895.chunk.js"
   },
   {
-    "revision": "0abd1394191ccff4460f",
-    "url": "https://sam-rosenthal.github.io/static/js/runtime-main.61788e10.js"
+    "revision": "621a80e0e21a1c73d199",
+    "url": "https://sam-rosenthal.github.io/static/js/runtime-main.e94eafb4.js"
   }
 ]);
