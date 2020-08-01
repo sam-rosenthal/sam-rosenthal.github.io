@@ -1,15 +1,15 @@
 import React, { Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
-import SamCard from './components/SamCard';
+import SamCard from './components/Nav/SamCard';
 import { Container, makeStyles, createStyles, Toolbar, ThemeProvider, createMuiTheme } from '@material-ui/core';
 import { responsiveFontSizes } from '@material-ui/core/styles';
 
-const Home = lazy(() => import('./Home'));
-const About = lazy(() => import('./components/About'));
-const Projects = lazy(() => import('./components/Projects'));
-const Skills = lazy(() => import('./components/Skills'));
-const Resume = lazy(() => import('./components/Resume'));
+const Home = lazy(() => import('./components/Welcome/Welcome'));
+const About = lazy(() => import('./components/About/About'));
+const Projects = lazy(() => import('./components/Projects/Projects'));
+const Skills = lazy(() => import('./components/Skills/Skills'));
+const Resume = lazy(() => import('./components/Resume/Resume'));
 
 const useStyles = makeStyles(() =>
   createStyles({
@@ -37,8 +37,8 @@ function App(): JSX.Element {
   const classes = useStyles();
 
   return (
-    <Router>
-      <div style={{ display: 'flex', height: '100%' }}>
+    <div style={{ display: 'flex', height: '100%' }}>
+      <Router>
         <ThemeProvider theme={theme}>
           {/* <Navbar /> */}
           <SamCard />
@@ -56,8 +56,8 @@ function App(): JSX.Element {
             </Suspense>
           </Container>
         </ThemeProvider>
-      </div>
-    </Router>
+      </Router>
+    </div>
   );
 }
 

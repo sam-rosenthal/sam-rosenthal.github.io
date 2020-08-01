@@ -3,12 +3,12 @@ import { createStyles, makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
-import { Button, Tooltip, Grid, Theme, Divider, Box, Hidden } from '@material-ui/core';
+import { Button, Tooltip, Grid, Theme, Box, Hidden } from '@material-ui/core';
 import PersonIcon from '@material-ui/icons/Person';
+import WorkOutlineOutlinedIcon from '@material-ui/icons/WorkOutlineOutlined';
 import DescriptionOutlinedIcon from '@material-ui/icons/DescriptionOutlined';
 import ComputerIcon from '@material-ui/icons/Computer';
 import GitHubIcon from '@material-ui/icons/GitHub';
-import WorkOutlineOutlinedIcon from '@material-ui/icons/WorkOutlineOutlined';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import EmailIcon from '@material-ui/icons/Email';
 import { Tabs, Tab } from '@material-ui/core';
@@ -59,14 +59,13 @@ const useStyles = makeStyles((theme: Theme) =>
       '&:hover': {
         backgroundColor: '#7b0000',
       },
+      borderRight: '1px solid rgba(0, 0, 0, 0.12)',
     },
   }),
 );
 
 export default function Navbar(): JSX.Element {
   const classes = useStyles();
-  // const location = useLocation().pathname;
-
   const location = useLocation().pathname;
 
   function getValue(pathname: string): number | boolean {
@@ -74,19 +73,17 @@ export default function Navbar(): JSX.Element {
     if (pathname === '/') {
       return false;
     } else if (pathname === '/About') {
-      return 1;
+      return 0;
     } else if (pathname === '/Projects') {
-      return 3;
+      return 1;
     } else if (pathname === '/Skills') {
-      return 5;
+      return 2;
     } else if (pathname === '/Resume') {
-      return 7;
+      return 3;
     } else {
       return 0;
     }
   }
-  // console.log(location);
-  // console.log(getValue(location));
 
   return (
     <>
@@ -113,9 +110,14 @@ export default function Navbar(): JSX.Element {
                   }}
                   className={classes.tabText}
                 >
-                  <Divider orientation="vertical" flexItem />
-                  <Tab icon={<PersonIcon />} label="About" component={Link} to="/About" className={classes.tab} />
-                  <Divider orientation="vertical" flexItem />
+                  <Tab
+                    icon={<PersonIcon />}
+                    label="About"
+                    component={Link}
+                    to="/About"
+                    className={classes.tab}
+                    style={{ borderLeft: '1px solid rgba(0, 0, 0, 0.12)' }}
+                  />
                   <Tab
                     icon={<WorkOutlineOutlinedIcon />}
                     label="Projects"
@@ -123,9 +125,7 @@ export default function Navbar(): JSX.Element {
                     to="/Projects"
                     className={classes.tab}
                   />
-                  <Divider orientation="vertical" flexItem />
                   <Tab icon={<ComputerIcon />} label="Skills" component={Link} to="/Skills" className={classes.tab} />
-                  <Divider orientation="vertical" flexItem />
                   <Tab
                     icon={<DescriptionOutlinedIcon />}
                     label="Resume"
@@ -133,7 +133,6 @@ export default function Navbar(): JSX.Element {
                     to="/Resume"
                     className={classes.tab}
                   />
-                  <Divider orientation="vertical" flexItem />
                 </Tabs>
               </Grid>
               <Grid item md={2} sm={12}>

@@ -11,7 +11,6 @@ export interface techChipsProp {
 }
 
 export function TechChips(techChipsProp: techChipsProp): JSX.Element {
-  console.log(techChipsProp.data);
   return (
     <>
       {techChipsProp.data.map((d: techChip) => {

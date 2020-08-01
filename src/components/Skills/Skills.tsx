@@ -21,7 +21,6 @@ import {
 } from '@material-ui/core';
 import Rating from '@material-ui/lab/Rating';
 import HelpIcon from '@material-ui/icons/Help';
-import TypedHeader from './TypedHeader';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -61,43 +60,52 @@ function createData(image: string, technology: string, level: number, category: 
 }
 
 const rows = [
-  createData('../techicons/java.png', 'Java 8', 3, 'Programming Language'),
-  createData('../techicons/python.png', 'Python', 3, 'Programming Language'),
-  createData('../techicons/css.png', 'CSS 3', 3, 'Programming Language'),
-  createData('../techicons/js.png', 'Javascript', 3, 'Programming Language'),
-  createData('../techicons/HTML.png', 'HTML 5', 3, 'Programming Language'),
-  createData('../techicons/react.png', 'React', 3, 'Library/Framework'),
-  createData('../techicons/typescript.png', 'Typescript', 3, 'Programming Language'),
-  createData('../techicons/ocaml.png', 'OCaml', 3, 'Programming Language'),
-  createData('../techicons/spring.png', 'Spring', 3, 'Library/Framework'),
-  createData('../techicons/junit.png', 'JUnit', 3, 'Library/Framework'),
-  createData('../techicons/selenium.png', 'Selenium', 3, 'Library/Framework'),
-  createData('../techicons/maven.png', 'Maven', 3, 'Library/Framework'),
-  createData('../techicons/material.png', 'Material UI', 2, 'Library/Framework'),
-  createData('../techicons/bootstrap.png', 'Bootstrap', 2, 'Library/Framework'),
-  createData('../techicons/d3.png', 'D3', 2, 'Library/Framework'),
-  createData('../techicons/numpy.png', 'Numpy', 2, 'Library/Framework'),
-  createData('../techicons/jira.png', 'Jira', 3, 'Software Development Tool'),
-  createData('../techicons/git.png', 'Git', 3, 'Software Development Tool'),
-  createData('../techicons/travis.png', 'Travis CI', 3, 'Software Development Tool'),
-  createData('../techicons/jenkins.png', 'Jenkins', 3, 'Software Development Tool'),
-  createData('../techicons/github.png', 'Github', 3, 'Software Development Tool'),
-  createData('../techicons/bitbucket.png', 'Bitbucket', 3, 'Software Development Tool'),
-  createData('../techicons/eclipse.png', 'Eclipse', 3, 'IDE'),
-  createData('../techicons/vscode.png', 'VS Code', 3, 'IDE'),
-  createData('../techicons/jupyter.png', 'Jupyter Notebook', 3, 'IDE'),
-  createData('../techicons/tortoisegit.png', 'Tortoise git', 3, 'Software Development Tool'),
-  createData('../techicons/confluence.png', 'Confluence', 3, 'Software Development Tool'),
-  createData('../techicons/soapui.png', 'Soap UI Pro', 3, 'Software Development Tool'),
-  createData('../techicons/analytics.png', 'Google Analytics', 2, 'Software Development Tool'),
-  createData('../techicons/regex.png', 'Regular Expressions', 3, 'Software Development Tool'),
-  createData('../techicons/c.png', 'C', 1, 'Programming Language'),
-  createData('../techicons/latex.png', 'Latex', 3, 'Programming Language'),
-  createData('../techicons/matlab.png', 'Matlab', 3, 'Software Development Tool'),
-  createData('../techicons/groovy.png', 'Groovy', 2, 'Programming Language'),
-  createData('../techicons/processing.png', 'Processing', 2, 'IDE'),
-  createData('../techicons/ampl.png', 'Ampl', 3, 'Programming Language'),
+  createData('../../techicons/java.png', 'Java 8', 3, 'Programming Language'),
+  createData('../../techicons/python.png', 'Python', 3, 'Programming Language'),
+  createData('../../techicons/css.png', 'CSS 3', 3, 'Programming Language'),
+  createData('../../techicons/js.png', 'Javascript', 3, 'Programming Language'),
+  createData('../../techicons/HTML.png', 'HTML 5', 3, 'Programming Language'),
+  createData('../../techicons/react.png', 'React', 3, 'Library/Framework'),
+  createData('../../techicons/typescript.png', 'Typescript', 3, 'Programming Language'),
+  createData('../../techicons/ocaml.png', 'OCaml', 3, 'Programming Language'),
+  createData('../../techicons/spring.png', 'Spring', 3, 'Library/Framework'),
+  createData('../../techicons/junit.png', 'JUnit', 3, 'Library/Framework'),
+  createData('../../techicons/selenium.png', 'Selenium', 3, 'Library/Framework'),
+  createData('../../techicons/maven.png', 'Maven', 3, 'Library/Framework'),
+  createData('../../techicons/material.png', 'Material UI', 2, 'Library/Framework'),
+  createData('../../techicons/bootstrap.png', 'Bootstrap', 2, 'Library/Framework'),
+  createData('../../techicons/d3.png', 'D3', 2, 'Library/Framework'),
+  createData('../../techicons/numpy.png', 'Numpy', 2, 'Library/Framework'),
+  createData('../../techicons/jira.png', 'Jira', 3, 'Software Development Tool'),
+  createData('../../techicons/git.png', 'Git', 3, 'Software Development Tool'),
+  createData('../../techicons/travis.png', 'Travis CI', 3, 'Software Development Tool'),
+  createData('../../techicons/jenkins.png', 'Jenkins', 3, 'Software Development Tool'),
+  createData('../../techicons/github.png', 'Github', 3, 'Software Development Tool'),
+  createData('../../techicons/bitbucket.png', 'Bitbucket', 3, 'Software Development Tool'),
+  createData('../../techicons/eclipse.png', 'Eclipse', 3, 'IDE'),
+  createData('../../techicons/vscode.png', 'VS Code', 3, 'IDE'),
+  createData('../../techicons/jupyter.png', 'Jupyter Notebook', 3, 'IDE'),
+  createData('../../techicons/readyapi.png', 'Ready API', 3, 'IDE'),
+  createData('../../techicons/tortoisegit.png', 'Tortoise git', 3, 'Software Development Tool'),
+  createData('../../techicons/confluence.png', 'Confluence', 3, 'Software Development Tool'),
+  createData('../../techicons/soapui.png', 'Soap UI Pro', 3, 'Software Development Tool'),
+  createData('../../techicons/analytics.png', 'Google Analytics', 2, 'Software Development Tool'),
+  createData('../../techicons/regex.png', 'Regular Expressions', 3, 'Software Development Tool'),
+  createData('../../techicons/c.png', 'C', 1, 'Programming Language'),
+  createData('../../techicons/latex.png', 'LaTex', 3, 'Programming Language'),
+  createData('../../techicons/matlab.png', 'Matlab', 3, 'Programming Language'),
+  createData('../../techicons/groovy.png', 'Groovy', 2, 'Programming Language'),
+  createData('../../techicons/processing.png', 'Processing', 2, 'IDE'),
+  createData('../../techicons/ampl.png', 'Ampl', 3, 'Programming Language'),
   createData('TL', 'Terrapin Logo', 3, 'Programming Language'),
+
+  createData('../../techicons/eslint.png', 'ESLint', 3, 'Software Development Tool'),
+  createData('../../techicons/reactrouter.png', 'React Router', 3, 'Software Development Tool'),
+  createData('../../techicons/prettier.png', 'Prettier', 3, 'Software Development Tool'),
+  createData('../../techicons/reactbootstrap.png', 'React Bootstrap', 3, 'Software Development Tool'),
+  createData('../../techicons/npm.png', 'NPM', 3, 'Software Development Tool'),
+  createData('A', 'Axios', 3, 'Software Development Tool'),
+  createData('../../techicons/json.png', 'JSON', 3, 'Software Development Tool'),
 ];
 function descendingComparator<T>(a: T, b: T, orderBy: keyof T) {
   if (b[orderBy] < a[orderBy]) {
@@ -175,7 +183,7 @@ function EnhancedTableHead(props: EnhancedTableProps) {
             key={headCell.id}
             align={headCell.align}
             sortDirection={orderBy === headCell.id ? order : false}
-            style={{ flexDirection: headCell.id === 'level' ? 'row-reverse' : undefined }}
+            style={{ flexDirection: headCell.id === 'level' ? 'row-reverse' : undefined, width: '33%' }}
           >
             <TableSortLabel
               active={orderBy === headCell.id}
@@ -254,7 +262,9 @@ export default function Skills(): JSX.Element {
   return (
     <Grid container direction="column" justify="center" spacing={3} style={{ textAlign: 'left' }}>
       <Grid item style={{ textAlign: 'center' }}>
-        {TypedHeader('My skillset')}
+        <Typography component="h1" variant="h2" id={'skills'}>
+          My skillset
+        </Typography>
         <Divider />
       </Grid>
       <Grid item>
@@ -272,7 +282,7 @@ export default function Skills(): JSX.Element {
                           alignItems: 'center',
                         }}
                       >
-                        {row.image.startsWith('../') ? (
+                        {row.image.startsWith('../../') ? (
                           <Avatar src={row.image} variant="rounded" style={{ marginRight: '12px' }}></Avatar>
                         ) : (
                           <Avatar style={{ marginRight: '12px' }}> {row.image}</Avatar>

@@ -38,6 +38,7 @@
     "react-swipeable-views": "^0.13.9",
     "react-swipeable-views-utils": "^0.13.9",
     "react-typist": "^2.0.5",
+    "react-typist-loop": "0.0.5",
     "typed.js": "^2.0.11",
     "typescript": "^3.7.5",
     "typewriter-effect": "^2.13.1"

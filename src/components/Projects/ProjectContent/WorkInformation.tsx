@@ -1,7 +1,163 @@
-import ProjectCard from './ProjectCard';
+import ProjectCard from '../ProjectCard/ProjectCard';
 import React from 'react';
 import { Typography, Link } from '@material-ui/core';
 
+export function TNS(): JSX.Element {
+  return (
+    <ProjectCard
+      {...{
+        id: 'tns',
+        header: {
+          href: 'https://tnsi.com/',
+          title: 'Software Intern',
+          date: 'Transaction Network Services | Summer 2020',
+          icon: '../Screenshots/TNS/TNS.png',
+        },
+        body: (
+          <>
+            <Typography>
+              <b>Overview</b>
+            </Typography>{' '}
+            <Typography gutterBottom>
+              Worked as a member of TNS’ Call Guardian team. Stabilized, expanded test coverage, and refactored/cleaned
+              up code for TNSI’s SPTF (standard portal test framework) automation tests in Selenium. Modularized test
+              scripts with a python script to aid organization and debugging. Learned domain expertise in the
+              telecommunications industry and TNS’ Call Guardian application used by Verizon.
+            </Typography>
+            <Typography>
+              <b>Project Details:</b>
+            </Typography>
+            <Typography gutterBottom>
+              I worked on revamping automated tests for the Call Guardian portal. Reported analysis of reocurring
+              failures. Records had millions of call logs, Fixed tests so that they would pass as well as be stable for
+              the consistanly changing data. ir thelped develop a framework for testing the end-to-end flow of HSAPI.
+              Three test-suites were created, one for each type of home insurance Homesite provides (homeowners,
+              renters, condos).
+            </Typography>
+            <Typography gutterBottom>
+              To analyze sources of the errors, developed Python scripts to efficiently find error message, cause of
+              error, test that failed, and line number of the failure. Modularized test scripts by writing a python
+              script to grab all required tests from data file.
+            </Typography>
+            <Typography gutterBottom>
+              Oracle SQL server database was used to store user information and website data. Insertions, deletions, and
+              updates on the portal were validated with DB calls. Oracle SQL Server Management was the IDE used to query
+              and update the databases.
+            </Typography>
+            <Typography gutterBottom></Typography>
+            <Typography gutterBottom></Typography>
+            <Typography>
+              <b>Testing Software Approach</b>
+            </Typography>{' '}
+            <Typography gutterBottom>
+              Followed an Agile software development approach consisting of three-week sprints with 2x/week scrum
+              meetings and post sprint review meetings. Used Jira to record progress and organize tasks. Continuous
+              integration used a Jenkins pipeline to run and verify all tests on a nightly basis.
+            </Typography>
+            <Typography gutterBottom>
+              Jenkins was used was the IDE used in software development of the automated test framework. Test cases were
+              written using Groovy. Test cases made REST calls to HSAPI via SoapUI. Groovy parser classes were created
+              to convert JSON responses into a HashMap (using JsonSlurper). The classes included getter methods to
+              retrieve all insurance information. All parser classes extended an abstract base class that was created to
+              handle general information that appeared in every response, such as: SessionID, HttpStatusCode,
+              RequiremenMessage, etc.
+            </Typography>
+            <Typography>
+              <b>Software tools</b>
+            </Typography>
+            <Typography>Used the following software tools:</Typography>
+            <ul style={{ margin: '0px', paddingLeft: '20px' }}>
+              <li>
+                <b>Selenium</b> for automated testing
+              </li>
+              <li>
+                <b>Git</b> for version control
+              </li>
+              <li>
+                <b>Jenkins</b> for CI/CD
+              </li>
+              <li>
+                <b>Jira</b> for project management
+              </li>
+              <li>
+                <b>Agile methodology</b> for software development
+              </li>
+              <li>
+                <b>ORACLE DB Management</b> as the SQL IDE
+              </li>
+              <li>
+                <b>Python</b> for text scripting
+              </li>
+              <li>
+                <b>Jupyter notebook</b> as the IDE for python
+              </li>
+              <li>
+                <b>Microsoft Teams</b> as the communications platform
+              </li>
+            </ul>
+          </>
+        ),
+        techIcons: {
+          data: [
+            {
+              icon: '../../techicons/selenium.png',
+              label: 'Selenium',
+            },
+            {
+              icon: '../../techicons/git.png',
+              label: 'Git',
+            },
+            {
+              icon: '../../techicons/jenkins.png',
+              label: 'Jenkins',
+            },
+            {
+              icon: '../../techicons/jira.png',
+              label: 'Jira',
+            },
+            {
+              icon: '../../techicons/oracle.png',
+              label: 'ORACLE DB Management',
+            },
+            {
+              icon: '../../techicons/vscode.png',
+              label: 'Visual Studio',
+            },
+            {
+              icon: '../../techicons/Python.png',
+              label: 'Python',
+            },
+            {
+              icon: '../../techicons/jupyter.png',
+              label: 'Jupyter notebook',
+            },
+          ],
+        },
+        techDetails: null,
+        carouselImages: {
+          images: [
+            {
+              label: 'Website Ui',
+              imgPath: '../Screenshots/Homesite/WebsiteUI.png',
+            },
+            {
+              label: 'ReadyApi Interface',
+              imgPath: '../Screenshots/Homesite/ReadyApi.png',
+            },
+            {
+              label: 'BitBucket',
+              imgPath: '../Screenshots/Homesite/Bitbucket.png',
+            },
+            {
+              label: 'Microsoft SQL Management Server',
+              imgPath: '../Screenshots/Homesite/SQL.png',
+            },
+          ],
+        },
+      }}
+    />
+  );
+}
 export function Homesite(): JSX.Element {
   return (
     <ProjectCard
@@ -18,7 +174,7 @@ export function Homesite(): JSX.Element {
             <Typography>
               <b>Overview</b>
             </Typography>{' '}
-            <Typography>
+            <Typography gutterBottom>
               Worked as a member of Homesite&apos;s QA Automation team. Built a testing framework for Homesite&apos;s
               home-insurance quoting REST API (HSAPI) with{' '}
               <Link
@@ -39,11 +195,10 @@ export function Homesite(): JSX.Element {
               </Link>
               , the primary tool used in the framework I worked on.{' '}
             </Typography>
-            <br />
             <Typography>
               <b>Project Details</b>
             </Typography>
-            <Typography>
+            <Typography gutterBottom>
               I helped develop a framework for testing the end-to-end flow of HSAPI. Three test-suites were created, one
               for each type of home insurance Homesite provides (homeowners, renters, condos). Each test-suite included
               test cases that would send all HTTP requests (Post, Put, and Get) required for retrieving and purchasing a
@@ -52,8 +207,7 @@ export function Homesite(): JSX.Element {
               and a &quot;RequirementMessage&quot; of &quot;ok&quot;. Note: when a request had missing requirements the
               requirement message would have details on missing data.
             </Typography>
-            <br />
-            <Typography>
+            <Typography gutterBottom>
               ReadyAPI was the IDE used in software development of the automated test framework. Test cases were written
               using Groovy. Test cases made REST calls to HSAPI via SoapUI. Groovy parser classes were created to
               convert JSON responses into a HashMap (using JsonSlurper). The classes included getter methods to retrieve
@@ -61,24 +215,21 @@ export function Homesite(): JSX.Element {
               general information that appeared in every response, such as: SessionID, HttpStatusCode,
               RequiremenMessage, etc.
             </Typography>
-            <br />
-            <Typography>
+            <Typography gutterBottom>
               Microsoft SQL server database was used to enable the test framework to be dynamic and data driven. To
               generate each JSON HTTP request, two tables were queried. The first table would return the JSON keys and
               the second table return the JSON values. Microsoft SQL Server Management was the IDE used to query and
               update the databases.
             </Typography>
-            <br />
             <Typography>
               <b>Testing Software Approach</b>
             </Typography>{' '}
-            <Typography>
+            <Typography gutterBottom>
               Followed a pseudo-agile software development approach. Participated in week-long sprints. Used Jira to
               organize and manage a backlog of stories and Confluence to provide overall project status and milestones.
               Development branches were managed by Bitbucket. Continuous integration used a Jenkins pipeline to run and
               verify all tests.{' '}
             </Typography>
-            <br />
             <Typography>
               <b>Documentation</b>
             </Typography>
@@ -144,47 +295,47 @@ export function Homesite(): JSX.Element {
         techIcons: {
           data: [
             {
-              icon: '../techicons/soapui.png',
+              icon: '../../techicons/soapui.png',
               label: 'Soap UI Pro',
             },
             {
-              icon: '../techicons/readyapi.png',
+              icon: '../../techicons/readyapi.png',
               label: 'ReadyApi',
             },
             {
-              icon: '../techicons/groovy.png',
+              icon: '../../techicons/groovy.png',
               label: 'Groovy',
             },
             {
-              icon: '../techicons/git.png',
+              icon: '../../techicons/git.png',
               label: 'Git',
             },
             {
-              icon: '../techicons/bitbucket.png',
+              icon: '../../techicons/bitbucket.png',
               label: 'BitBucket',
             },
             {
-              icon: '../techicons/confluence.png',
+              icon: '../../techicons/confluence.png',
               label: 'Confluence',
             },
             {
-              icon: '../techicons/jira.png',
+              icon: '../../techicons/jira.png',
               label: 'Jira',
             },
             {
-              icon: '../techicons/vscode.png',
+              icon: '../../techicons/vscode.png',
               label: 'Visual Studio',
             },
             {
-              icon: '../techicons/json.png',
+              icon: '../../techicons/json.png',
               label: 'JSON',
             },
             {
-              icon: '../techicons/microsoftsql.png',
+              icon: '../../techicons/microsoftsql.png',
               label: 'Microsoft SQL Server',
             },
             {
-              icon: '../techicons/jenkins.png',
+              icon: '../../techicons/jenkins.png',
               label: 'Jenkins',
             },
           ],
@@ -259,19 +410,19 @@ export function TIC(): JSX.Element {
         techIcons: {
           data: [
             {
-              icon: '../techicons/eclipse.png',
+              icon: '../../techicons/eclipse.png',
               label: 'Eclipse',
             },
             {
-              icon: '../techicons/java.png',
+              icon: '../../techicons/java.png',
               label: 'JDK8',
             },
             {
-              icon: '../techicons/processing.png',
+              icon: '../../techicons/processing.png',
               label: 'Processing',
             },
             {
-              icon: '../techicons/microworlds.ico',
+              icon: '../../techicons/microworlds.ico',
               label: 'Microworlds',
             },
             {
