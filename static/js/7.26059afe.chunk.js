@@ -1,0 +1,2 @@
+(this["webpackJsonpmy-app"]=this["webpackJsonpmy-app"]||[]).push([[7],{238:function(e,t,n){"use strict";n.r(t),n.d(t,"default",(function(){return r}));var i=n(0),s=n.n(i);function r(){return s.a.createElement("iframe",{src:"../../Resume.pdf",title:"resume",style:{display:"flex",minWidth:"100%",height:"100%",justifyContent:"center"}})}}}]);
+//# sourceMappingURL=7.26059afe.chunk.js.map
