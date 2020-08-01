@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "deba87b181b5e02fc50dd0a24b77829e",
+    "revision": "c83952055432cd7f98e600195893e538",
     "url": "https://sam-rosenthal.github.io/index.html"
   },
   {
-    "revision": "8673f5fb3ff6f42ed08d",
+    "revision": "64a4ce516e1539c1f905",
     "url": "https://sam-rosenthal.github.io/static/css/main.10f4ece2.chunk.css"
   },
   {
@@ -56,8 +56,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "https://sam-rosenthal.github.io/static/js/9.b2ed6913.chunk.js"
   },
   {
-    "revision": "8673f5fb3ff6f42ed08d",
-    "url": "https://sam-rosenthal.github.io/static/js/main.0c229982.chunk.js"
+    "revision": "64a4ce516e1539c1f905",
+    "url": "https://sam-rosenthal.github.io/static/js/main.36c09bbc.chunk.js"
   },
   {
     "revision": "d20a03f3aedf575a81cb",
